@@ -135,12 +135,12 @@
             [likes]="768"></app-photo-community>
         </div>
         <div class="photo">
+          <app-photo-community
+            [image]="'./assets/community/grandcanyon.png'"
+            [author]="'Patoudu92'"
+            [title]="'LE GRAND CANYON - ÉTATS UNIS'"
+            [likes]="547"></app-photo-community>
         </div>
-        <app-photo-community
-          [image]="'./assets/community/grandcanyon.png'"
-          [author]="'Patoudu92'"
-          [title]="'LE GRAND CANYON - ÉTATS UNIS'"
-          [likes]="547"></app-photo-community>
       </div>
     </div>
   </div>
@@ -154,3 +154,140 @@
       </div>
     </div>
   </div>
+
+  <div class="container">
+    <div class="podcasts">
+      <div class="left">
+        <h2 class="page-section">Derniers podcasts</h2>
+        <div class="podcast">
+          <app-articles-list-item
+            [image]="'./assets/podcasts/pod1.png'"
+            [contentType]="podcast"
+            [tags]="['Voyage', 'Orcades']"
+            [title]="'Vers un monde postcarbone, épisode 3 : les Orcades, ces petites îles...'"
+            [description]="'Une alternative crédible aux énergies fossiles est-elle possible ? Pour quels pays ? Avec quels inconvénients ? Pour répondre à ces questions, nous clôturons dans le numéro de mai notre...'"></app-articles-list-item>
+        </div>
+        <div class="podcast">
+          <app-articles-list-item [image]="'./assets/podcasts/pod2.png'"
+            [contentType]="podcast"
+            [tags]="['Voyage', 'Espagne']"
+            [title]="'Indonésie: un tigre de Sumatra découvert empoisonné'"
+            [description]="'Un tigre de Sumatra, sans doute empoisonné, a été découvert dans le nord de l\'île indonésienne, a annoncé mardi un responsable du parc national de Batang Gadis....'">
+          </app-articles-list-item>
+        </div>
+        <div class="podcast">
+          <app-articles-list-item [image]="'./assets/podcasts/pod3.png'"
+            [contentType]="podcast"
+            [tags]="['Voyage', 'Espagne']"
+            [title]="'Première vague de chaleur dans l\'Europe déconfinée'"
+            [description]="'A peine sortis du confinement, de nombreux Européens ont été pris mardi dans une vague de chaleur qui traverse le continent de l\'Espagne à la Suède...'">
+          </app-articles-list-item>
+        </div>
+        <button class="btn-green">Découvrir tous les podcasts</button>
+      </div>
+      <aside class="right">
+        <p>Écoutez aussi sur : <img src="./assets/podcasts/podcasts-platforms.png"></p>
+          <img src="./assets/adds/square.png" alt="square">
+      </aside>
+    </div>
+  </div>
+
+  <div class="bg-gris">
+    <div class="container">
+      <h2 class="page-section">Les + Populaires</h2>
+      <app-featured-article [image]="'./assets/featured-home/belgique.png'"
+        [contentType]="'Article'"
+        [tags]="['Voyage', 'Belgique']"
+        [title]="'Quelles sont les plus belles villes de Belgique ?'"
+        [description]="'Grâce à sa frontière commune avec la France, la Belgique est une destination idéale lorsqu\'on ne veut pas voyager très loin. Surtout que le plat pays possède des villes charmantes. Voici une sélection de celles qui nous ont tapé dans l\’œil.'">
+      </app-featured-article>
+      <div class="miniArticles">
+        <app-articles-list-mini-item [image]="'./assets/mini-article/matcha.png'"
+          [tags]="['Culture', 'Japon']"
+          [title]="'Tout savoir sur le matcha, la poudre tonique des Japonais.'"></app-articles-list-mini-item>
+        <app-articles-list-mini-item [image]="'./assets/mini-article/croatie.png'"
+          [tags]="['Environnement', 'Croatie']"
+          [title]="'Croatie : état de catastrophe naturelle déclaré après la...'"></app-articles-list-mini-item>
+        <app-articles-list-mini-item [image]="'./assets/mini-article/elevage.png'"
+          [tags]="['Environement', 'Espagne']"
+          [title]="'Elevage bovin : mea culpa de Greenpeace qui dénonce...'"></app-articles-list-mini-item>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-green">
+    <div class="container magazine">
+      <h3>GEO MAGAZINE</h3>
+      <div class="center">
+        <div class="top-magazine">
+          <img src="./assets/magazine/top.png" alt="image">
+          <div class="top-content-magazine">
+            <h4>Juin 2020</h4>
+            <h3>Islande : Échappées en terre<br>de feu et de glace</h3>
+            <button>S'abonner au magazine</button>
+          </div>
+        </div>
+        <div class="bottom">
+          <div class="left">
+            <p>GEO est le magazine de la connaissance du monde. Son contenu riche s’étend bien au-delà du voyage. A travers une
+            exigence journalistique et un photojournalisme de terrain, GEO apporte à ses lecteurs depuis son lancement en 1979, une
+            prise de recul sur l'évolution du monde, une ouverture sur les cultures et un accès à la connaissance.</p>
+            <p>Très contemporain, GEO s’ancre dans le monde actuel, notamment au travers d’enquêtes et de reportages sur l’évolution de
+            nos sociétés, les questions qui touchent notre environnement et les grands enjeux géopolitiques du monde.</p>
+            <p>Ce mois-ci dans le numéro 496 de GÉO vous retrouverez :</p>
+            <ul>
+              <li>- Islande : Echappées en terre de feu et de glace</li>
+              <li>- Fjords de l'ouest, glaciers, volcans : la nature en spectacle</li>
+              <li>-
+              Randonnée : Un père et son fils sur la Laugavegur</li>
+              <li>- Hornbjarg, le sanctuaire du renard polaire</li>
+              <li>- Faune : 20000 merveilles
+              sous les mers</li>
+              <li>- Pakistan : Le défis quotidien des chrétiens</li>
+              <li>- Découverte : L'orient-express à la mode turque</li>
+              <li>- Brésil :
+              Un fermier qui réinvente la forêt</li>
+            </ul>
+          </div>
+          <div class="right bg-gris-fonce">
+            <img src="./assets/magazine/right.png" alt="image">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <h2 class="page-section">À lire aussi</h2>
+    <div class="recomendations">
+        <div class="reco">
+          <img src="./assets/recomendations/rec1.png" alt="opel">
+          <p>Découvrez la nouvelle Opel Corsa pendant les Rendez-Vous Privés OPEL.</p>
+        </div>
+        <div class="reco">
+          <img src="./assets/recomendations/rec2.png" alt="opel">
+          <p>Découvrez la nouvelle Opel Corsa pendant les Rendez-Vous Privés OPEL.</p>
+        </div>
+        <div class="reco">
+          <img src="./assets/recomendations/rec3.png" alt="opel">
+          <p>Découvrez la nouvelle Opel Corsa pendant les Rendez-Vous Privés OPEL.</p>
+        </div>
+    </div>
+  </div>
+
+  <hr>
+
+  <div>
+    <div class="container footer">
+        <app-footer-miniature></app-footer-miniature>
+        <app-footer-miniature
+          [image]="'./assets/footer/foot2.png'"
+          [title]="'Geo en version numérique'"
+          [description]="'Pour avoir toujours Geo dans votre poche et ne rien manquer de vos actualités préférées.'"></app-footer-miniature>
+        <app-footer-miniature
+          [image]="'./assets/footer/foot3.png'"
+          [title]="'Découvrez la boutique'"
+          [description]="'Une sélection de livres et d\'objets originaux, astucieux et indispensables !'"></app-footer-miniature>
+    </div>
+  </div>
+

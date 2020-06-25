@@ -144,3 +144,88 @@
 .page-section {
   margin-bottom: 35px;
 }
+
+.recomendations {
+  display: flex;
+  justify-content: space-between;
+
+  .reco {
+    flex-basis: 32.5%;
+    img {
+      max-width: 100%;
+    }
+  }
+}
+
+.footer {
+  display: flex;
+}
+
+.podcasts {
+  display: flex;
+  justify-content: space-between;
+
+  .left {
+    flex-basis: 60%;
+  }
+
+  .right {
+    flex-basis: 10%;
+  }
+}
+
+.magazine {
+  h3 {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  .top-magazine, .bottom, .right {
+    display: flex;
+  }
+
+  .top-magazine {
+    position: relative;
+
+    .top-content-magazine {
+      position: absolute;
+      width: 50%;
+      height: 80%;
+      left: 25%;
+      top: 10%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  .bottom {
+    justify-content: space-between;
+
+    .left {
+      flex-basis: 66%;
+      background-color: white;
+      color: black;
+      padding: 50px;
+
+      ul li {
+        display: block;
+      }
+
+    }
+
+    .right {
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 80%;
+      }
+    }
+  }
+
+}

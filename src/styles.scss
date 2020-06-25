@@ -76,6 +76,14 @@ h3 {
   }
 }
 
+.bg-green {
+  background: #85BC32;
+  color: white;
+  h2 {
+    color: white;
+  }
+}
+
 .has-2-columns {
   display: flex;
   flex-direction: row;
@@ -154,6 +162,19 @@ h4 {
 .btn-green {
   color: white;
   background: #85BC32;
+  text-transform: uppercase;
+  font-family: Rosario;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px;
+  padding: 15px 20px;
+  letter-spacing: 1px;
+  border: none;
+}
+
+.btn-gray {
+  color: white;
+  background: #444A58;
   text-transform: uppercase;
   font-family: Rosario;
   font-style: normal;

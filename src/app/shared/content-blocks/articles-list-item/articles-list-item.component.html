@@ -5,15 +5,16 @@
         <div class="tag">{{ contentType }}</div>
     </div>
     <div id="content-article-list">
-        <div class="tag-list"
-            *ngFor="let tag of tags">
-            <span>{{ tag }}</span>
+        <div class="tag-list">
+            <span *ngFor="let tag of tags">{{ tag }}</span>
         </div>
         <h3>{{ title }}</h3>
         <p>{{ description }}</p>
         <ul class="share-buttons">
-            <li><a href="#">Sauvegarder</a></li>
-            <li><a href="#">Partager</a></li>
+            <li><img src="./assets/icons/saveBlack.svg"
+                    alt="save icon">Sauvegarder</li>
+            <li><img src="./assets/icons/shareBlack.svg"
+                    alt="save icon">Partager</li>
         </ul>
     </div>
 </section>
