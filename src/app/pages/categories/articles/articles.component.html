@@ -1,1 +1,42 @@
-<p>articles works!</p>
+<div id="header-home-page">
+    <div class="container">
+        <div class="header-home-page-info">
+            <h1>{{ title }}</h1>
+            <div class="subcategories"
+                *ngFor="let cat of subcategories">
+                <span><img src="{{ cat.image }}">{{ cat.name }}</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div>
+    <div class="container">
+        <div class="nav">
+            <span><img src="./assets/icons/tempslecture.svg" alt="">Temps de lecture</span>
+            <span><img src="./assets/icons/contenttype.svg"
+                alt="">Type de contenu</span>
+            <span><img src="./assets/icons/themes.svg"
+                alt="">Thèmes</span>
+            <img src="./assets/icons/search.svg">
+            <button>Valider</button>
+        </div>
+    </div>
+</div>
+
+<div>
+    <div class="container">
+        <img src="" alt="publicité">
+    </div>
+</div>
+
+<div>
+    <div class="container">
+        <app-featured-article></app-featured-article>
+        <div class="featured-articles">
+            <app-featured-article></app-featured-article>
+            <app-featured-article></app-featured-article>
+        </div>
+    </div>
+</div>

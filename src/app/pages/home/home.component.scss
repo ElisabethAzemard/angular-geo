@@ -68,6 +68,7 @@
         justify-content: space-around;
         height: 200px;
         overflow:hidden;
+
         img {
           position: absolute;
           top:0;
@@ -100,4 +101,46 @@
       left:57%;
     }
   }
+}
+
+.community-photos {
+  display: flex;
+  margin-top: 30px;
+
+  .photo:not(:last-of-type) {
+    margin-right: 20px;
+  }
+}
+
+.mini-featured {
+  display: flex;
+  section {
+    flex-basis: 50%;
+  }
+}
+
+.boutons {
+  display: flex;
+  width: 55%;
+  margin: auto;
+  justify-content: space-between;
+}
+
+
+.miniArticles {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+
+  // section:not(:last-of-type) {
+  //   margin-right: 5px;
+  // }
+
+  > *:not(:last-of-type) {
+    margin-right: 10px;
+  }
+}
+
+.page-section {
+  margin-bottom: 35px;
 }

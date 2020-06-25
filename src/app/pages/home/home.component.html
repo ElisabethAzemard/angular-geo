@@ -13,13 +13,56 @@
 
 <div>
   <div class="container">
-    <h2>Dernières parutions</h2>
+    <h2 class="page-section">Dernières parutions</h2>
+    <app-featured-article
+      [image]="'./assets/featured-home/chilowe.png'"
+      [contentType]="'Article'"
+      [tags]="['Évènement', 'Paris']"
+      [title]="'Le festival Chilowé, deux jours consacrés à la micro-aventure à vivre à la Fondation GoodPlanet'"
+      [description]="'Chilowé, le média spécialiste de la micro-aventure a décidé de lancer son premier festival. Organisé les 19 et 20 septembre prochains à la Fondation Good Planet, l\'évènement proposera des rencontres avec des aventuriers, des projections ou encore des ateliers découvertes.'">
+    </app-featured-article>
+    <div class="mini-featured">
+      <app-featured-article
+        [image]="'./assets/featured-home/barcelone.png'"
+        [contentType]="'Article'"
+        [tags]="['Voyage', 'Espagne']"
+        [title]="'A Barcelone, un concert devant 2292 plantes pour célébrer la réouverture...'"
+        [description]="'Grâce à sa frontière commune avec la France, la Belgique est une destination idéale lorsqu\'on ne veut pas voyager très loin. Surtout que le plat pays possède des villes charmantes. Voici une sélection de celles qui nous ont tapé dans l\’œil.'">
+      </app-featured-article>
+      <app-featured-article
+        [image]="'./assets/featured-home/siberie.png'"
+        [contentType]="'Article'"
+        [tags]="['Voyage', 'Sibérie']"
+        [title]="'En pleine vague de chaleur, la Sibérie enregistre un nouveau record de tem...'"
+        [description]="'Grâce à sa frontière commune avec la France, la Belgique est une destination idéale lorsqu\'on ne veut pas voyager très loin. Surtout que le plat pays possède des villes charmantes. Voici une sélection de celles qui nous ont tapé dans l\’œil.'">
+      </app-featured-article>
+    </div>
   </div>
 </div>
 
 <div class="bg-gris">
   <div class="container">
-    <h2>Les + Populaires</h2>
+    <h2 class="page-section">Les + Populaires</h2>
+    <app-featured-article
+      [image]="'./assets/featured-home/belgique.png'"
+      [contentType]="'Article'"
+      [tags]="['Voyage', 'Belgique']"
+      [title]="'Quelles sont les plus belles villes de Belgique ?'"
+      [description]="'Grâce à sa frontière commune avec la France, la Belgique est une destination idéale lorsqu\'on ne veut pas voyager très loin. Surtout que le plat pays possède des villes charmantes. Voici une sélection de celles qui nous ont tapé dans l\’œil.'"></app-featured-article>
+      <div class="miniArticles">
+        <app-articles-list-mini-item
+          [image]="'./assets/mini-article/matcha.png'"
+          [tags]="['Culture', 'Japon']"
+          [title]="'Tout savoir sur le matcha, la poudre tonique des Japonais.'"></app-articles-list-mini-item>
+        <app-articles-list-mini-item
+          [image]="'./assets/mini-article/croatie.png'"
+          [tags]="['Environnement', 'Croatie']"
+          [title]="'Croatie : état de catastrophe naturelle déclaré après la...'"></app-articles-list-mini-item>
+        <app-articles-list-mini-item
+          [image]="'./assets/mini-article/elevage.png'"
+          [tags]="['Environement', 'Espagne']"
+          [title]="'Elevage bovin : mea culpa de Greenpeace qui dénonce...'"></app-articles-list-mini-item>
+      </div>
   </div>
 </div>
 
@@ -69,7 +112,7 @@
             <p>Du microplastique découvert dans l'écosystème terrestre de l'Antarctique.</p>
           </div>
           <div class="bouton-blanc">
-            <p><a href="#">VOIR + de RÉCITS</a></p>
+            <p><a href="#">VOIR + DE RÉCITS</a></p>
           </div>
         </div>
       </div>
@@ -80,10 +123,34 @@
     <div class="container">
       <h2>Communauté photo</h2>
       <span>Il vous reste une semaine pour élire la photo  du mois !</span>
-      <div class="has-3-columns">
+      <div class="community-photos">
         <div class="photo">
-
+          <app-photo-community></app-photo-community>
         </div>
+        <div class="photo">
+          <app-photo-community
+            [image]="'./assets/community/sacrecoeur.png'"
+            [author]="'Nicodu16'"
+            [title]="'LE SACRÉ COEUR - PARIS'"
+            [likes]="768"></app-photo-community>
+        </div>
+        <div class="photo">
+        </div>
+        <app-photo-community
+          [image]="'./assets/community/grandcanyon.png'"
+          [author]="'Patoudu92'"
+          [title]="'LE GRAND CANYON - ÉTATS UNIS'"
+          [likes]="547"></app-photo-community>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <div class="container">
+      <div class="boutons">
+        <button class="btn-green">En voir +</button>
+        <button class="btn-green">Publier mes photos</button>
+        <button class="btn-green">Parcourir les fonds d'écran</button>
       </div>
     </div>
   </div>

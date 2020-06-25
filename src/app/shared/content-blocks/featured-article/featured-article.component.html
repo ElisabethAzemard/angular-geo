@@ -1,18 +1,20 @@
 <section>
     <img src="{{ image }}"
-    alt="footer miniature image">
-    <div id="content">
+    alt="footer miniature image"
+    class="bg-image">
+    <div id="content-featured">
         <div id="up">
-            <span>{{ contentType }}</span>
-            <ul>
-                <li><a href="#">Sauvegarder</a></li>
-                <li><a href="#">Partager</a></li>
+            <span class="post-type">{{ contentType }}</span>
+            <ul class="share-buttons">
+                <li><img src="./assets/icons/save.svg" alt="save icon">Sauvegarder</li>
+                <li><img src="./assets/icons/save.svg"
+                    alt="save icon">Partager</li>
             </ul>
         </div>
         <div id="down">
-            <p class="tags" *ngFor="let tag of tags">
-                <span href="#">{{ tag }}</span>
-            </p>
+            <div class="tag-list">
+                <span *ngFor="let tag of tags">{{ tag }}</span>
+            </div>
             <h3>{{ title }}</h3>
             <p>{{ description }}</p>
         </div>

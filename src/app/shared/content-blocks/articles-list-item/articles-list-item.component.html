@@ -4,14 +4,14 @@
             alt="footer miniature image">
         <div class="tag">{{ contentType }}</div>
     </div>
-    <div id="content">
-        <p class="tags"
+    <div id="content-article-list">
+        <div class="tag-list"
             *ngFor="let tag of tags">
-            <span href="#">{{ tag }}</span>
-        </p>
+            <span>{{ tag }}</span>
+        </div>
         <h3>{{ title }}</h3>
         <p>{{ description }}</p>
-        <ul>
+        <ul class="share-buttons">
             <li><a href="#">Sauvegarder</a></li>
             <li><a href="#">Partager</a></li>
         </ul>

@@ -9,7 +9,7 @@ body {
   font-family: Rosario;
   font-style: normal;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 30px;
 }
 
@@ -17,7 +17,7 @@ h1 {
   font-family: Crimson Text;
   font-style: normal;
   font-weight: bold;
-  font-size: 46px;
+  font-size: 32px;
   line-height: 137.4%;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -28,7 +28,7 @@ h2 {
   font-family: Crimson Text;
   font-style: normal;
   font-weight: bold;
-  font-size: 35px;
+  font-size: 25px;
   line-height: 100.3%;
   /* or 53px */
   text-transform: uppercase;
@@ -43,10 +43,10 @@ h2 {
 }
 
 h3 {
-  font-family: Crimson Text;
+  font-family: "Crimson Text";
   font-style: normal;
   font-weight: bold;
-  font-size: 30px;
+  font-size: 21px;
   line-height: 120.6%;
   padding-bottom: 0px;
   margin-bottom: 0px;
@@ -88,10 +88,13 @@ h3 {
   }
 }
 
-.tag {
-  // style for content type tag
-  position: absolute;
-  top: 1.5rem;
+// .tag {
+//   // style for content type tag
+//   position: absolute;
+//   top: 1.5rem;
+// }
+.post-type {
+  background: rgba(27,27,35, .5);
 }
 
 ul {
@@ -118,11 +121,12 @@ h4 {
     font-family: Rosario;
     font-style: normal;
     font-weight: 600;
-    font-size: 18px;
+    font-size: 14px;
     line-height: 22px;
     margin: 10px;
     padding: 5px 20px;
     letter-spacing: 1px;
+    // display: flex;
   }
 }
 
@@ -132,6 +136,44 @@ h4 {
     a {
       background: white;
       color: #444A58;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-family: Rosario;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 22px;
+      margin: 10px;
+      padding: 10px 25px;
+      letter-spacing: 1px;
+
     }
+  }
+}
+
+.btn-green {
+  color: white;
+  background: #85BC32;
+  text-transform: uppercase;
+  font-family: Rosario;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px;
+  padding: 15px 20px;
+  letter-spacing: 1px;
+  border: none;
+}
+
+// override in component not working
+#photoTitle {
+  font-family: Rosario !important;
+}
+
+.share-buttons {
+  display: inline-flex;
+
+  li {
+    display: flex;
+    flex-direction: row;
   }
 }

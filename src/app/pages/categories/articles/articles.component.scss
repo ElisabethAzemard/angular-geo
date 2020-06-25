@@ -1,0 +1,17 @@
+.featured-articles {
+    display: flex;
+    flex-wrap: wrap;
+
+    > * {
+        flex-basis: 50%;
+    }
+
+    // flex-basis: 50%;
+
+    // &:not(:first-child) {
+    //     flex-basis: 50%;
+    // }
+
+    // &:first-child {
+    // }
+}
