@@ -23,6 +23,7 @@ import { FeaturedArticleComponent } from './shared/content-blocks/featured-artic
 import { VideosAndPodcastsComponent } from './shared/content-blocks/videos-and-podcasts/videos-and-podcasts.component';
 import { MagazineSubscriptionComponent } from './shared/content-blocks/magazine-subscription/magazine-subscription.component';
 import { PhotoCommunityComponent } from './shared/content-blocks/photo-community/photo-community.component';
+import { NavbarComponent } from './shared/header/navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,8 @@ import { PhotoCommunityComponent } from './shared/content-blocks/photo-community
     FeaturedArticleComponent,
     VideosAndPodcastsComponent,
     MagazineSubscriptionComponent,
-    PhotoCommunityComponent
+    PhotoCommunityComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,

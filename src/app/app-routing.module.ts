@@ -14,6 +14,9 @@ import { PodcastComponent } from './pages/singles/podcast/podcast.component';
 import { PhotoreportagesComponent } from './pages/categories/photoreportages/photoreportages.component';
 import { UploadComponent } from './pages/upload/upload.component';
 
+import { NavbarComponent } from './shared/header/navbar/navbar.component';
+
+
 const routes: Routes = [
     { path: '', component: HomeComponent },
     { path: 'articles', component: ArticlesComponent },
@@ -26,6 +29,8 @@ const routes: Routes = [
     { path: 'podcasts/podcast-name', component: PodcastComponent },
     { path: 'photoreportages/photo-reportage-name', component: PhotoreportagesComponent },
     { path: 'upload', component: UploadComponent },
+    { path: 'menu', component: NavbarComponent },
+
 ];
 
 @NgModule({
