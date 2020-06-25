@@ -22,6 +22,7 @@ import { ArticlesListMiniItemComponent } from './shared/content-blocks/articles-
 import { FeaturedArticleComponent } from './shared/content-blocks/featured-article/featured-article.component';
 import { VideosAndPodcastsComponent } from './shared/content-blocks/videos-and-podcasts/videos-and-podcasts.component';
 import { MagazineSubscriptionComponent } from './shared/content-blocks/magazine-subscription/magazine-subscription.component';
+import { NavbarComponent } from './shared/header/navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { MagazineSubscriptionComponent } from './shared/content-blocks/magazine-
     ArticlesListMiniItemComponent,
     FeaturedArticleComponent,
     VideosAndPodcastsComponent,
-    MagazineSubscriptionComponent
+    MagazineSubscriptionComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
