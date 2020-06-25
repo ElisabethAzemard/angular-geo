@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-footer-miniature',
@@ -6,6 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./footer-miniature.component.scss']
 })
 export class FooterMiniatureComponent implements OnInit {
+
+  @Input() image: string = "./assets/footer-miniature.png";
+  @Input() title: string = "Geo en version papier.";
+  @Input() description: string = "Chaque semaine, recevez l'édition papier de Geo, livrée directement chez vous.";
+  @Input() buttonName: string = "Je découvre";
 
   constructor() { }
 

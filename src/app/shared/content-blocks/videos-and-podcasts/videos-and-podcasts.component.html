@@ -1,15 +1,14 @@
 <section>
-    <img src="./assets/featured-article.png"
+    <img src="{{ image }}"
         alt="footer miniature image">
     <div id="content">
-        <img src="./assets/logo-wireframe.png" alt="logo png" class="logo">
-        <h4>Vidéos et Podcasts</h4><!--uppercase-->
-        <h5>Les plus belles villes du monde</h5><!--uppercase-->
-        <p>Notre planète regorge de merveilles. Voici une petite sélection des villes, hors de France, qui nous ont tapé dans
-        l'oeil.</p>
+        <img src="{{ logo }}" alt="logo png" class="logo">
+        <h4>{{ category }}</h4><!--uppercase-->
+        <h5>{{ title }}</h5><!--uppercase-->
+        <p>{{ description }}</p>
         <ul>
-            <li><a href="#">Voir les vidéos</a></li>
-            <li><a href="#">Écouter les podcasts</a></li>
+            <li><a href="#">{{ link1Title }}</a></li>
+            <li><a href="#">{{ link2Title }}</a></li>
         </ul>
     </div>
 </section>

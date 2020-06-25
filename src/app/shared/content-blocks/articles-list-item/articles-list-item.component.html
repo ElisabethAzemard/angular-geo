@@ -1,16 +1,16 @@
 <section>
     <div id="image">
-        <img src="./assets/article-list-item.png"
+        <img src="{{ image }}"
             alt="footer miniature image">
-        <div class="tag">Article</div>
+        <div class="tag">{{ contentType }}</div>
     </div>
     <div id="content">
-        <ul class="categories">
-            <li><a href="#">Voyage</a></li>
-            <li><a href="#">Espagne</a></li>
-        </ul>
-        <h4>A Barcelone, un concert devant 2292 plantes pour célébrer la réouverture de l'opéra</h4>
-        <p>Lundi 22 juin, l'opéra de Barcelone accueillera son premier concert post-confinement, diffusé en direct sur son site. En guise de public : pas de mélomanes humains, mais ...</p>
+        <p class="tags"
+            *ngFor="let tag of tags">
+            <span href="#">{{ tag }}</span>
+        </p>
+        <h3>{{ title }}</h3>
+        <p>{{ description }}</p>
         <ul>
             <li><a href="#">Sauvegarder</a></li>
             <li><a href="#">Partager</a></li>

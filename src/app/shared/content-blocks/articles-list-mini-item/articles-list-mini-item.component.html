@@ -1,13 +1,13 @@
 <section>
     <div id="image">
-        <img src="./assets/article-list-mini-item.png"
-            alt="footer miniature image">
+        <img src="{{ image }}"
+            alt="">
     </div>
     <div id="content">
-        <ul class="categories">
-            <li><a href="#">Voyage</a></li>
-            <li><a href="#">Espagne</a></li>
-        </ul>
-        <h4>A Barcelone, un concert devant 2292 plantes pour célébrer la réouverture de l'opéra</h4>
+        <p class="tags"
+            *ngFor="let tag of tags">
+            <span href="#">{{ tag }}</span>
+        </p>
+        <h3>{{ title }}</h3>
     </div>
 </section>

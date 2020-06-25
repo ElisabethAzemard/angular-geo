@@ -1,22 +1,20 @@
 <section>
-    <img src="./assets/featured-article.png"
+    <img src="{{ image }}"
     alt="footer miniature image">
     <div id="content">
         <div id="up">
-            <span>Diaporama</span>
+            <span>{{ contentType }}</span>
             <ul>
                 <li><a href="#">Sauvegarder</a></li>
                 <li><a href="#">Partager</a></li>
             </ul>
         </div>
         <div id="down">
-            <ul class="categories">
-                <li><a href="#">Voyage</a></li>
-                <li><a href="#">Espagne</a></li>
-            </ul>
-            <h4>A Barcelone, un concert devant 2292 plantes pour célébrer la réouverture de l'opéra</h4>
-            <p>Lundi 22 juin, l'opéra de Barcelone accueillera son premier concert post-confinement, diffusé en direct sur
-                son site. En guise de public : pas de mélomanes humains, mais ...</p>
+            <p class="tags" *ngFor="let tag of tags">
+                <span href="#">{{ tag }}</span>
+            </p>
+            <h3>{{ title }}</h3>
+            <p>{{ description }}</p>
         </div>
     </div>
 </section>
