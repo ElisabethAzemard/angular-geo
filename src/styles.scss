@@ -1,22 +1,95 @@
-.tag {
-    // style for content type tag
+@import url('https://fonts.googleapis.com/css2?family=Rosario:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;700&display=swap');
+
+
+body {
+  margin :0;
+  padding :0;
+  font-family: Vollkorn;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+h1 {
+  font-family: Crimson Text;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 46px;
+  line-height: 137.4%;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+h2 {
+  font-family: Crimson Text;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 100.3%;
+  /* or 53px */
+  text-transform: uppercase;
+  color: #000000;
+  position: relative;
+  &:after {
+    content: url('./assets/underline.svg');
     position: absolute;
-    top: 1.5rem;
+    bottom: -25px;
+    left: 0;
+  }
+}
+
+.container {
+  max-width: 1324px;
+  display: block;
+  margin: 0 auto;
+  width: 90%;
+  padding: 50px 0;
+}
+
+.bg-gris {
+  background: #F8F8F8;
+}
+
+.tag {
+  // style for content type tag
+  position: absolute;
+  top: 1.5rem;
 }
 
 ul {
-    // add style for categories tag
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  // add style for categories tag
+  list-style: none;
+  margin: 0;
+  padding: 0;
 
-    li {
-        display: inline;
-    }
+  li {
+    display: inline;
+  }
 }
 
 h4 {
-    margin-top: 0;
+  margin-top: 0;
 }
 
 
+
+
+.tag-list {
+  span {
+    color:white;
+    background: #444A58;
+    text-transform: uppercase;
+    font-family: Rosario;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    margin: 10px;
+    padding: 5px 20px;
+    letter-spacing: 1px;
+  }
+}
