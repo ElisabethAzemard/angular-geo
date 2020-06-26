@@ -20,9 +20,11 @@
   background-size: cover;
   color: white;
   text-align: center;
+  background-position: center;
   h2 {
     padding-top:250px;
     color: white;
+    font-size:45px;
     &:after {
       display: none;
     }
@@ -113,9 +115,11 @@
 }
 
 .mini-featured {
+  margin-top: 10px;
   display: flex;
-  section {
-    flex-basis: 50%;
+  justify-content: space-between;
+  app-featured-article {
+    flex-basis: 49%;
   }
 }
 
@@ -137,7 +141,7 @@
   // }
 
   > *:not(:last-of-type) {
-    margin-right: 10px;
+    margin-right: 20px;
   }
 }
 
@@ -164,7 +168,7 @@
 .podcasts {
   display: flex;
   justify-content: space-between;
-
+margin-top: 20px;
   .left {
     flex-basis: 60%;
   }
@@ -190,17 +194,37 @@
 
   .top-magazine {
     position: relative;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 100%;
+    }
     .top-content-magazine {
-      position: absolute;
-      width: 50%;
+      width: 60%;
       height: 80%;
-      left: 25%;
-      top: 10%;
+      position: absolute; /* postulat de départ */
+      top: 50%; left: 50%; /* à 50%/50% du parent référent */
+      transform: translate(-50%, -50%); /* décalage de 50% de sa propre taille */
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      a.outline {
+        background: transparant;
+        border: solid 1px white;
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: Rosario;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 22px;
+        margin: 10px;
+        padding: 10px 25px;
+        letter-spacing: 1px;
+      }
     }
   }
 
@@ -228,4 +252,29 @@
     }
   }
 
+}
+
+
+.magasin-geo {
+  h2 {
+    text-align: center;
+    font-size: 46px;
+    &:after {
+      display: none;
+    }
+  }
+  h3 {
+    font-family: Rosario;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+  }
+}
+
+app-header {
+  width: 100vw;
+  position: relative;
+  z-index: 1;
+  position: fixed;
 }
