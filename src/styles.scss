@@ -28,7 +28,7 @@ h2 {
   font-family: Crimson Text;
   font-style: normal;
   font-weight: bold;
-  font-size: 25px;
+  font-size: 30px;
   line-height: 100.3%;
   /* or 53px */
   text-transform: uppercase;
@@ -101,9 +101,7 @@ h3 {
 //   position: absolute;
 //   top: 1.5rem;
 // }
-.post-type {
-  background: rgba(27,27,35, .5);
-}
+
 
 ul {
   // add style for categories tag
@@ -196,5 +194,23 @@ h4 {
   li {
     display: flex;
     flex-direction: row;
+  }
+}
+
+
+
+span.post-type {
+    background: rgba(#444A58, .5);
+    padding:10px 30px;
+    padding-left:100px;
+    margin-left: -130px;
+}
+
+.mini-featured {
+  span.post-type {
+      background: rgba(#444A58, .5);
+      padding:10px 30px;
+      padding-left:100px;
+      margin-left: -65px;
   }
 }

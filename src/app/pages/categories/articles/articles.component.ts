@@ -78,10 +78,10 @@ export class ArticlesComponent implements OnInit {
 
         }
 
-        if (windowTop > 1000) {
+        if (windowTop > 900) {
           $(this)
           .find(".bg-move")
-          .css({ top: 1200 - windowTop})
+          .css({ top: 1100 - windowTop})
           .css("transition","none" );
         }
       });

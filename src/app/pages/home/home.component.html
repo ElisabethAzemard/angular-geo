@@ -1,3 +1,5 @@
+<app-header></app-header>
+
 <div id="header-home-page">
   <div class="container">
     <div class="header-home-page-info">
@@ -9,18 +11,18 @@
     </div>
   </div>
 </div>
-
-
 <div>
   <div class="container">
-    <h2 class="page-section"><span>Dernières parutions</span><span></span></h2>
-    <app-featured-article
+    <img src="../../../assets/pub-2.png" alt="" style="display: block; margin:0 auto; width:660px;">
+<br><br>
+    <h2 class="page-section">Dernières parutions</h2>
+    <a href="./articles"><app-featured-article
       [image]="'./assets/featured-home/chilowe.png'"
       [contentType]="'Article'"
       [tags]="['Évènement', 'Paris']"
       [title]="'Le festival Chilowé, deux jours consacrés à la micro-aventure à vivre à la Fondation GoodPlanet'"
       [description]="'Chilowé, le média spécialiste de la micro-aventure a décidé de lancer son premier festival. Organisé les 19 et 20 septembre prochains à la Fondation Good Planet, l\'évènement proposera des rencontres avec des aventuriers, des projections ou encore des ateliers découvertes.'">
-    </app-featured-article>
+    </app-featured-article></a>
     <div class="mini-featured">
       <app-featured-article
         [image]="'./assets/featured-home/barcelone.png'"
@@ -40,8 +42,10 @@
   </div>
 </div>
 
-<div class="bg-gris">
+<div class="">
   <div class="container">
+    <img src="../../../assets/pub-3.png" alt="" style="display: block; margin:0 auto; width:660px;">
+<br><br>
     <h2 class="page-section">Les + Populaires</h2>
     <app-featured-article
       [image]="'./assets/featured-home/belgique.png'"
@@ -49,6 +53,7 @@
       [tags]="['Voyage', 'Belgique']"
       [title]="'Quelles sont les plus belles villes de Belgique ?'"
       [description]="'Grâce à sa frontière commune avec la France, la Belgique est une destination idéale lorsqu\'on ne veut pas voyager très loin. Surtout que le plat pays possède des villes charmantes. Voici une sélection de celles qui nous ont tapé dans l\’œil.'"></app-featured-article>
+      <br>
       <div class="miniArticles">
         <app-articles-list-mini-item
           [image]="'./assets/mini-article/matcha.png'"
@@ -65,7 +70,7 @@
       </div>
   </div>
 </div>
-
+<br><br>
 <div class="bg-culture-g">
   <div class="container">
     <h2>Testez votre culture générale</h2>
@@ -121,6 +126,8 @@
 
   <div class="communaute-photo">
     <div class="container">
+      <img src="../../../assets/pub-4.png" alt="" style="display: block; margin:0 auto; width:660px;">
+  <br><br>
       <h2>Communauté photo</h2>
       <span>Il vous reste une semaine pour élire la photo  du mois !</span>
       <div class="community-photos">
@@ -167,6 +174,7 @@
             [title]="'Vers un monde postcarbone, épisode 3 : les Orcades, ces petites îles...'"
             [description]="'Une alternative crédible aux énergies fossiles est-elle possible ? Pour quels pays ? Avec quels inconvénients ? Pour répondre à ces questions, nous clôturons dans le numéro de mai notre...'"></app-articles-list-item>
         </div>
+        <br>
         <div class="podcast">
           <app-articles-list-item [image]="'./assets/podcasts/pod2.png'"
             [contentType]="podcast"
@@ -175,6 +183,7 @@
             [description]="'Un tigre de Sumatra, sans doute empoisonné, a été découvert dans le nord de l\'île indonésienne, a annoncé mardi un responsable du parc national de Batang Gadis....'">
           </app-articles-list-item>
         </div>
+        <br>
         <div class="podcast">
           <app-articles-list-item [image]="'./assets/podcasts/pod3.png'"
             [contentType]="podcast"
@@ -183,6 +192,8 @@
             [description]="'A peine sortis du confinement, de nombreux Européens ont été pris mardi dans une vague de chaleur qui traverse le continent de l\'Espagne à la Suède...'">
           </app-articles-list-item>
         </div>
+        <br>
+        <br>
         <button class="btn-green">Découvrir tous les podcasts</button>
       </div>
       <aside class="right">
@@ -192,39 +203,17 @@
     </div>
   </div>
 
-  <div class="bg-gris">
-    <div class="container">
-      <h2 class="page-section">Les + Populaires</h2>
-      <app-featured-article [image]="'./assets/featured-home/belgique.png'"
-        [contentType]="'Article'"
-        [tags]="['Voyage', 'Belgique']"
-        [title]="'Quelles sont les plus belles villes de Belgique ?'"
-        [description]="'Grâce à sa frontière commune avec la France, la Belgique est une destination idéale lorsqu\'on ne veut pas voyager très loin. Surtout que le plat pays possède des villes charmantes. Voici une sélection de celles qui nous ont tapé dans l\’œil.'">
-      </app-featured-article>
-      <div class="miniArticles">
-        <app-articles-list-mini-item [image]="'./assets/mini-article/matcha.png'"
-          [tags]="['Culture', 'Japon']"
-          [title]="'Tout savoir sur le matcha, la poudre tonique des Japonais.'"></app-articles-list-mini-item>
-        <app-articles-list-mini-item [image]="'./assets/mini-article/croatie.png'"
-          [tags]="['Environnement', 'Croatie']"
-          [title]="'Croatie : état de catastrophe naturelle déclaré après la...'"></app-articles-list-mini-item>
-        <app-articles-list-mini-item [image]="'./assets/mini-article/elevage.png'"
-          [tags]="['Environement', 'Espagne']"
-          [title]="'Elevage bovin : mea culpa de Greenpeace qui dénonce...'"></app-articles-list-mini-item>
-      </div>
-    </div>
-  </div>
-
-  <div class="bg-green">
+  <div class="bg-green magasin-geo">
     <div class="container magazine">
-      <h3>GEO MAGAZINE</h3>
+      <h2>GEO MAGAZINE</h2>
       <div class="center">
         <div class="top-magazine">
           <img src="./assets/magazine/top.png" alt="image">
           <div class="top-content-magazine">
-            <h4>Juin 2020</h4>
-            <h3>Islande : Échappées en terre<br>de feu et de glace</h3>
-            <button>S'abonner au magazine</button>
+            <h3>JUIN <br> 2020</h3>
+            <h2>Islande : Échappées en terre<br>de feu et de glace</h2>
+            <br><br><br><br><br><br><br>
+            <a class="outline">S'abonner au magazine</a>
           </div>
         </div>
         <div class="bottom">
@@ -290,4 +279,3 @@
           [description]="'Une sélection de livres et d\'objets originaux, astucieux et indispensables !'"></app-footer-miniature>
     </div>
   </div>
-
