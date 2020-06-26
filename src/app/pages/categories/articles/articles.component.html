@@ -121,15 +121,31 @@
       <div class="container">
 <h2>Pour aller plus loin</h2>
 <div class="has-2-columns">
-  <div class="has-colum">
+  <div class="has-colum image-left">
     <app-featured-article
-      [image]=""
+      [image]="'./assets/article/rhone.png'"
       [contentType]="'Article'"
-      [tags]="['Voyage', 'Belgique']"
-      [title]="'Quelles sont les plus belles villes de Belgique ?'"
-      [description]="'Grâce à sa frontière commune avec la France, la Belgique est une destination idéale lorsqu\'on ne veut pas voyager très loin. Surtout que le plat pays possède des villes charmantes. Voici une sélection de celles qui nous ont tapé dans l\’œil.'"></app-featured-article>
+      [tags]="['Voyage', 'France']"
+      [title]="'Dans les Bouches-du-Rhône, un projet de parc dédié à la culture provençale.'"
+      [description]="'Spectacles vivants, promotion du patrimoine provençal, restaurants et village reconstitué: le propriétaire du Château de La Barben (Bouches-du-Rhône) a dévoilé mardi un projet de rénovation du site, dont certains aspects rappellent le Puy du Fou en Vendée.'"></app-featured-article>
+  </div>
+  <div class="has-colum">
+    <app-articles-list-mini-item-right
+      [image]="'./assets/article/mini1.png'"
+      [tags]="['Voyage', 'Espagne']"
+      [title]="'Espagne : l\'Alhambra de Grenade rouvre ses portes au public.'"></app-articles-list-mini-item-right>
+    <app-articles-list-mini-item-right
+      [image]="'./assets/article/mini2.png'"
+      [tags]="['Voyage', 'Terres']"
+      [title]="'Standardiser l\'écriture inuktut, meilleur moyen de sauver la langue des Inuits ?'"></app-articles-list-mini-item-right>
+    <app-articles-list-mini-item-right
+      [image]="'./assets/article/mini3.png'"
+      [tags]="['Voyage', 'Espagne']"
+      [title]="'Quelles sont les plus belles villes de Belgique ?'"></app-articles-list-mini-item-right>
   </div>
 
 </div>
       </div>
     </div>
+
+<img src="./assets/article/papeterie.png" alt="" style="max-width: 100%;">

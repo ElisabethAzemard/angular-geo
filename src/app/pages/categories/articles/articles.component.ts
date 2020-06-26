@@ -91,13 +91,11 @@ export class ArticlesComponent implements OnInit {
         var windowTop = $(window).scrollTop();
 
         if (windowTop < 2) {
-          console.log(windowTop);
           $(".titre").css("color","white" );
           $("p").css("color","white" );
         }
 
         if (windowTop > 2) {
-          console.log(windowTop);
           $(".titre").css("color","black" );
           $("p").css("color","black" );
         }

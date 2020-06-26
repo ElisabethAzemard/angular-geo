@@ -115,3 +115,15 @@ b {
     width: 300px;
   }
 }
+
+
+.has-colum.image-left {
+  padding-right: 15px;
+
+  section {
+    height: 100%;
+    img.bg-image {
+      object-fit: fill;
+    }
+  }
+}

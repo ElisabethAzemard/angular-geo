@@ -24,6 +24,7 @@ import { VideosAndPodcastsComponent } from './shared/content-blocks/videos-and-p
 import { MagazineSubscriptionComponent } from './shared/content-blocks/magazine-subscription/magazine-subscription.component';
 import { PhotoCommunityComponent } from './shared/content-blocks/photo-community/photo-community.component';
 import { NavbarComponent } from './shared/header/navbar/navbar.component';
+import { ArticlesListMiniItemRightComponent } from './shared/content-blocks/articles-list-mini-item-right/articles-list-mini-item-right.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,8 @@ import { NavbarComponent } from './shared/header/navbar/navbar.component';
     VideosAndPodcastsComponent,
     MagazineSubscriptionComponent,
     PhotoCommunityComponent,
-    NavbarComponent
+    NavbarComponent,
+    ArticlesListMiniItemRightComponent
   ],
   imports: [
     BrowserModule,
